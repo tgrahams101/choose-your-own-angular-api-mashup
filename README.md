@@ -2,10 +2,9 @@
 
 You goal is to build an API "Mashup", or "rapid prototype", using Angular and your choice of public APIs.
 
-#### Setup
-Fork and clone this repo.
+## Setup
 
-Run the `budo` local server:
+Please fork and clone this repo, and run the `budo` local server:
 ```bash
 budo  -P --host=localhost --open
 ```
