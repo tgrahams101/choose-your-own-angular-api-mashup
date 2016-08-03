@@ -11,7 +11,6 @@ budo  -P --host=localhost --open
 ```
 
 ## Suggested API Endpoints
->>>>>>> 3dde670... moar readme
 
 * [Open Movie Database API](http://www.omdbapi.com)
 * [Github API](https://developer.github.com/v3/)
@@ -26,7 +25,7 @@ budo  -P --host=localhost --open
 ## Rapid Prototype
 Angular is the perfect tool for building quick front-end prototypes so that you can get feedback.
 
-You have the next hour to build a rapid prototype to show to your client (Keep it Simple!):
+You have the next hour to build a rapid prototype to show to your client (Make a plan and *Keep it Simple*!):
 
 1. First, come up with a "proof of concept".
   - Do you have the data you need?
