@@ -1,5 +1,7 @@
-angular.module('your-app-name-goes-here', []);
+angular.module('moviemusicApp', [])
        //.config(config);
+
+
 
 
 ////////////
