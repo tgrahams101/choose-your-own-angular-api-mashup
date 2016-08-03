@@ -26,14 +26,21 @@
       <div class='row'>
         <div class="col-md-12">
           <div class="col-md-8">
-               <h1>Movie Soundtrack Finder</h1>
+               <h1>Movie Soundtrack Poster Finder</h1>
                <img ng-src="{{indexControl.image}}">
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="searchBar">
+                <p>Type in Name of Movie below </p>
                 <input type="text" ng-model="indexControl.search_input">
                 <button class ="btn btn-primary" ng-click="indexControl.search()">Search</button>
           </div>
+          <div class="col-md-4">
+                <!-- <h2> Yoga</h2> -->
+          </div>
+
         </div>
+        <!-- <div class="col-md-4">
+        </div> -->
 
         <br>
 
