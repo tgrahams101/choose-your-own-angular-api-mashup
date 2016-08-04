@@ -3,6 +3,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: white; /* Sanity Check! */
   font-family: Verdana;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -17,5 +18,9 @@ img {
 }
 
 #searchBar {
-  margin-top: 50px;
+  margin-top: 25px;
+}
+
+.toprow {
+  margin-bottom: 20px;
 }

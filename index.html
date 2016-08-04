@@ -21,31 +21,45 @@
     <script src="/scripts/controllers/index.controller.js"></script>
 
   </head>
-  <body ng-controller="IndexController as indexControl">
+  <body>
     <div class="container-fluid">
-      <div class='row'>
-        <div class="col-md-12">
-          <div class="col-md-8">
-               <h1>Movie Soundtrack Poster Finder</h1>
-               <img ng-src="{{indexControl.image}}">
-          </div>
-          <div class="col-md-4" id="searchBar">
-                <p>Type in Name of Movie below </p>
-                <input type="text" ng-model="indexControl.search_input">
-                <button class ="btn btn-primary" ng-click="indexControl.search()">Search</button>
-          </div>
-          <div class="col-md-4">
-                <!-- <h2> Yoga</h2> -->
-          </div>
+                  <div class='row toprow'>
+                                    <div class="col-md-12">
+                                                  <div class="col-md-8">
+                                                       <h2>Movie Soundtrack Poster Finder</h2>
 
-        </div>
-        <!-- <div class="col-md-4">
-        </div> -->
+                                                  </div>
+                                                  <div class="col-md-4" id="searchBar">
+                                                        <p>Type in Name of Movie below </p>
+                                                        <input type="text" ng-model="indexControl.search_input">
+                                                        <button class ="btn btn-primary" ng-click="indexControl.search()">Search</button>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                        <!-- <h2> Yoga</h2> -->
+                                                  </div>
 
-        <br>
+                                    </div>
+                    <!-- <div class="col-md-4">
+                    </div> -->
 
-        <!-- <img ng-src="{{indexControl.image}}"> -->
-      </div>
+                                      <br>
+
+
+                    <!-- <img ng-src="{{indexControl.image}}"> -->
+                  </div>
+                  <div class='row'>
+                      <div class="col-md-12">
+                                <div class="col-md-4">
+                                  <a ng-href="/?q={{indexControl.search_input}}">  <img ng-src="{{indexControl.image1}}"> </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <img ng-src="{{indexControl.image2}}">
+                                </div>
+                                <div class="col-md-4">
+                                    <img ng-src="{{indexControl.image3}}">
+                              </div>
+
+                  </div>
     </div>
   </body>
 </html>

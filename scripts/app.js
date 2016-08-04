@@ -1,5 +1,5 @@
-angular.module('moviemusicApp', [])
-       //.config(config);
+angular.module('moviemusicApp', ['ngRoute'])
+       .config(config);
 
 
 
@@ -8,21 +8,26 @@ angular.module('moviemusicApp', [])
 // ROUTES //    //  SAVE THIS FOR LATER
 ////////////
 
-// config.$inject = ['$routeProvider', '$locationProvider'];
-// function config (  $routeProvider,   $locationProvider  )  {
-//   $routeProvider
-//     .when('/', {
-//       templateUrl: '',
-//       controller: '',
-//       controllerAs: ''
-//     })
-//     .otherwise({
-//       redirectTo: '/'
-//     });
-//
-//   $locationProvider
-//     .html5Mode({
-//       enabled: true,
-//       requireBase: false
-//     });
-// }
+config.$inject = ['$routeProvider', '$locationProvider'];
+function config (  $routeProvider,   $locationProvider  )  {
+  $routeProvider
+    .when('/', {
+      templateUrl: '../templates/index.html',
+      controller: 'IndexController',
+      controllerAs: 'indexControl'
+    })
+    .when('/?q=:searchinput', {
+      templateUrl: '../templates/index.html',
+      controller: 'IndexController',
+      controllerAs: 'indexControl'
+    })
+    .otherwise({
+      redirectTo: '/'
+    });
+
+  $locationProvider
+    .html5Mode({
+      enabled: true,
+      requireBase: false
+    });
+}
